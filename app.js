@@ -1,3 +1,6 @@
+// ==================== CONFIGURAZIONE SUPABASE ====================
+const SUPABASE_URL = 'https://wtybjjdmxqanfazgbbeh.supabase.co/rest/v1/';  // <-- Il tuo URL vero
+const SUPABASE_KEY = 'process.env.SUPABASE_KEY';  // <-- La tua chiave vera
 // ==================== REACT SETUP ====================
 const { useState, useEffect } = React;
 
