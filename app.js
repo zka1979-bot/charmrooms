@@ -1,9 +1,6 @@
 // ==================== CONFIGURAZIONE SUPABASE ====================
-
-import { createClient } from '@supabase/supabase-js'
-const supabaseUrl = 'https://wtybjjdmxqanfazgbbeh.supabase.co'
-const supabaseKey = process.env.SUPABASE_KEY
-const supabase = createClient(supabaseUrl, supabaseKey)
+const SUPABASE_URL = 'https://wtybjjdmxqanfazbbeh.supabase.co';  // <-- Il tuo URL vero
+const SUPABASE_KEY = 'process.env..env.SUPABASE_KEY';  // <-- La tua chiave vera
 // ==================== REACT SETUP ====================
 const { useState, useEffect } = React;
 
