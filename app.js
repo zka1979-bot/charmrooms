@@ -1,13 +1,16 @@
 // ==================== CONFIGURAZIONE SUPABASE ====================
-const SUPABASE_URL = 'https://wtybjjdmxqanfazgbbeh.supabase.co/rest/v1/';  // <-- Il tuo URL vero
-const SUPABASE_KEY = 'process.env.SUPABASE_KEY';  // <-- La tua chiave vera
+
+import { createClient } from '@supabase/supabase-js'
+const supabaseUrl = 'https://wtybjjdmxqanfazgbbeh.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey)
 // ==================== REACT SETUP ====================
 const { useState, useEffect } = React;
 
 // ==================== CONFIGURAZIONE ====================
 const APARTMENTS = [
-    { id: 'genziana', name: 'Appartamento Genziana', color: 'blue', price: 120, description: 'Vista montagna, 2 camere' },
-    { id: 'magenta', name: 'Appartamento Magenta', color: 'pink', price: 150, description: 'Vista lago, 3 camere' }
+    { id: 'genziana', name: 'Appartamento Genziana', color: 'blue', description: 'Vista montagna, 2 camere' },
+    { id: 'magenta', name: 'Appartamento Magenta', color: 'pink', description: 'Vista lago, 3 camere' }
 ];
 
 const STATUS = {
